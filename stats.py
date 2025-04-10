@@ -8,8 +8,8 @@ def get_num_char(text):
                        'q' : 0, 'r' : 0, 's' : 0, 't' : 0, 'u' : 0, 'v' : 0, 'w' : 0, 'x' : 0,
                        'y' : 0, 'z' : 0}
     for char in text:
-        if char in char_dictionary:
-            temp = char.lower()
+        temp = char.lower()
+        if temp in char_dictionary:
             temp_num = char_dictionary[temp] + 1
             char_dictionary[temp] = temp_num
 
